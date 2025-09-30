@@ -24,10 +24,7 @@ jobs:
           node-version: 20
       - name: Install deps (clean)
         run: npm ci
-      - name: Build with repo base
-        env:
-          GITHUB_PAGES: "true"
-          REPO_NAME: ${{ github.event.repository.name }}
+      - name: Build
         run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
