@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 // ⚠️ remplace "TON_REPO" par le nom EXACT du repo GitHub (casse incluse)
-const repo = 'TON_REPO'
+const repo = 'KFSA.LabApp.Plannificationview'
 
 export default defineConfig({
   plugins: [react()],
